@@ -1,0 +1,232 @@
+/* General Styling */
+body {
+    background-color: #121212;
+}
+
+p {
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: left;
+    background-size: cover;
+}
+
+/* Collapsible button */
+button.collapsible {
+    background-color: black;
+    color: #3d3d3d;
+    cursor: pointer;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    outline: auto;
+    font-size: 15px;
+}
+
+/* Video Section */
+.indexvideo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.videocontent {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 30%;
+    text-align: left;
+    font-family: "GS Sans Condensed", "Trebuchet MS", sans-serif;
+    padding-right: 50%;
+    pointer-events: none;
+}
+
+/* Gallery Section */
+.gallery-container {
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+
+.gallery {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 500px;
+    vertical-align: top;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 25px;
+    text-align: center;
+
+}
+
+/* Text Section */
+.text-1 {
+    font: 200 30px/30px "GS Sans Condensed", "Trebuchet MS", sans-serif;
+    color: #ffffff;
+}
+
+/* Widget Container */
+.widget-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+    /* Adjust to fit window size */
+}
+
+.left-panel {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    /* Adjust to fit window size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.overlay-text {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    animation: translateText 5s ease-in-out;
+    transform: translateX(-100%);
+    position: absolute;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+@keyframes translateText {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adjust spacing between cards */
+    justify-content: flex-start;
+    /* Align cards at the start */
+    height: 100%;
+    /* Ensure it uses the full height */
+    font: 200 20px/20px "GS Sans Condensed", "Trebuchet MS", sans-serif;
+
+}
+
+.card,
+.cardblack,
+.cardgrey {
+    width: 80%;
+    /* Use full width of the right panel */
+    height: 250px;
+    /* Set a fixed height for uniformity */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* Ensure images don't overflow */
+}
+
+.card img,
+.cardblack img,
+.cardgrey img {
+    width: 100%;
+    /* Make the image fill the width */
+    height: 70%;
+    /* Make the image fill the height */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the area */
+}
+
+.card {
+    background-color: #727070;
+    border: white;
+}
+
+.cardblack {
+    background-color: #000000;
+    border: white;
+    color: white;
+}
+
+.cardgrey {
+    background-color: #9f9e9e;
+    border: white;
+}
+
+.card:hover,
+.cardblack:hover,
+.cardgrey:hover {
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+.midtext {
+    font: 200 30px/30px "GS Sans Condensed", "Trebuchet MS", sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Footer Section */
+.footer1 {
+    padding: 50px;
+    width: 100%;
+    background-color: #d0cfcf;
+    color: #000000;
+    text-align: right;
+}
+
+#flists li {
+    letter-spacing: normal;
+    color: #eadddd;
+    text-align: justify;
+    list-style: none;
+}
+
+#top {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 20px;
+}

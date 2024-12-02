@@ -1,0 +1,79 @@
+body {
+    background-color: #121212;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.custom-cards {
+    background-color: #cc5959;
+    /* Color for cards */
+    color: rgb(0, 0, 0);
+    /* White text for card contents */
+}
+
+.bg-gray-600 {
+    background-color: #000000;
+    /* Medium gray for inputs and selects */
+}
+
+.border-0 {
+    border: none;
+    /* Remove card border */
+}
+
+.text-muted {
+    color: #b0b0b0;
+    /* Muted gray for text */
+}
+
+.text-white {
+    color: white;
+    /* White text for better visibility */
+}
+
+.float-end {
+    float: right;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: rgb(190, 190, 190);
+}
+
+.btn-outline-info {
+    color: #909090;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.custom-cards {
+    background-color: #007bff;
+}

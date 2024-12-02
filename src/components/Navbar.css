@@ -1,0 +1,55 @@
+#navbar {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    /* Ensure the navbar stays at the top */
+    left: 0;
+    /* Ensure the navbar sticks to the left edge */
+    right: 0;
+    /* Ensure the navbar sticks to the right edge */
+    margin-bottom: 10px;
+
+    background-color: #242424;
+    font-family: "GS Sans Condensed", "Trebuchet MS", sans-serif;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+    padding: auto;
+}
+
+
+li {
+    float: left;
+    inset-inline-start: 10px;
+}
+
+
+li a {
+    display: block;
+    color: rgb(246, 243, 243);
+    text-align: center;
+    padding: 14px 16px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #504f4f;
+    border-radius: 2rem;
+}
+
+button.collapsible {
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    outline: auto;
+    font-size: 15px;
+    align-items: center;
+}
